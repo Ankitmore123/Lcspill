@@ -1,0 +1,64 @@
+# .gitignore
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# C++ / Build artifacts
+*.o
+*.obj
+*.dll
+*.dylib
+*.a
+*.lib
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# Environment
+.env
+.venv
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Project-specific strict ignores
+# NEVER COMMIT MODELS OR DATASETS
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.h5
+*.onnx
+datasets/
+*.jsonl
+sharegpt*.json
+
+# Kaggle / Jupyter / Notebooks
+.ipynb_checkpoints
+kaggle_scratch/
+experiments/results/**/*.csv
+experiments/results/**/*.json
+# Note: Keep experiment config YAMLs committed, ignore large result blobs!
