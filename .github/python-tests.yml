@@ -1,0 +1,35 @@
+name: Python Component CI
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10"]
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        cache: 'pip'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        # Install testing dependencies
+        pip install pytest pytest-cov
+        # If you have a requirements file for the pure-python parts, uncomment below
+        # pip install -r requirements.txt
+        
+    - name: Run Pytest
+      run: |
+        # Run tests and generate coverage for python components
+        # Adjust the path if your tests are in a specific directory
+        pytest tests/ --doctest-modules --junitxml=junit/test-results.xml
