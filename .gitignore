@@ -61,4 +61,7 @@ sharegpt*.json
 kaggle_scratch/
 experiments/results/**/*.csv
 experiments/results/**/*.json
+# macOS
+.DS_Store
+
 # Note: Keep experiment config YAMLs committed, ignore large result blobs!
