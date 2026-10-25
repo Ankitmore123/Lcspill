@@ -1,0 +1,21 @@
+======================================================================================================================
+ SCORE  profile t4_profile_B.json (PRIMARY)   pass band |pred - meas| <= 1.5 pp on the mean over repeats
+======================================================================================================================
+ WL  status         preempt/GPU  mean L   measured gain % (mean, sd, range)      predicted %  error pp    advisor  decision  verdict
+ W1  in-sample              591     153       +10.69 +/- 0.45 [+10.2,+11.0]  +11.05 +/- 0.11     +0.36       SWAP    agrees     PASS
+ W2  in-sample              649     148         +8.97 +/- 1.52 [+7.9,+10.7]   +8.60 +/- 0.03     -0.37       SWAP    agrees     PASS
+ W3  PRE-REG                281     348          +8.38 +/- 1.08 [+7.6,+9.6]   +3.94 +/- 0.02     -4.44       SWAP    agrees     FAIL
+ W4  PRE-REG                  0       0          -0.08 +/- 0.20 [-0.3,+0.1]   +0.00 +/- 0.00     +0.08  RECOMPUTE    agrees     PASS
+
+======================================================================================================================
+ SCORE  profile t4_profile_C.json (secondary)   pass band |pred - meas| <= 1.5 pp on the mean over repeats
+======================================================================================================================
+ WL  status         preempt/GPU  mean L   measured gain % (mean, sd, range)      predicted %  error pp    advisor  decision  verdict
+ W1  in-sample              591     153       +10.69 +/- 0.45 [+10.2,+11.0]  +11.54 +/- 0.12     +0.84       SWAP    agrees     PASS
+ W2  in-sample              649     148         +8.97 +/- 1.52 [+7.9,+10.7]   +8.94 +/- 0.03     -0.04       SWAP    agrees     PASS
+ W3  PRE-REG                281     348          +8.38 +/- 1.08 [+7.6,+9.6]   +4.24 +/- 0.02     -4.14       SWAP    agrees     FAIL
+ W4  PRE-REG                  0       0          -0.08 +/- 0.20 [-0.3,+0.1]   +0.00 +/- 0.00     +0.08  RECOMPUTE    agrees     PASS
+
+ verdict  = PASS iff |mean predicted - mean measured| <= 1.5 pp (pre-registered)
+ decision = advisor says SWAP iff predicted >= 1.0%; 'agrees' if the measured mean is on the same side of 1.0% (reported, not part of the verdict)
+ wrote /kaggle/working/kvexp/score_W1-W4.json
