@@ -98,7 +98,7 @@ Each workload reports **mean ± sample SD over repeats**, plus the range.
 
 | Step | Commit | Time (IST) |
 |---|---|---|
-| Pre-registration + scripts | | |
+| Pre-registration + scripts | `f5783be` (f5783be4d4b92abb59690b766d22feba45e2bdd8) | 2026-10-25 17:47 IST |
 | Harness check result | | |
 | predictions_W3W4.json | | |
 | Swap arms + score | | |
