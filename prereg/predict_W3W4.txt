@@ -1,0 +1,41 @@
+============================================================================================
+ PRE-REGISTERED PREDICTION (recompute runs only; swap arms not yet run)
+============================================================================================
+
+ W3  [t4_profile_B.json, PRIMARY]
+ run    T_rec s  T_pred s  preempt g0/g1  mean L  f (g0)  sumR-sumS s  pred gain
+ r0       197.2     189.7     276/286        344   0.071         7.11      3.94%
+ r1       196.6     189.1     276/286        344   0.072         7.11      3.96%
+ r2       198.1     190.6     276/286        344   0.072         7.11      3.92%
+ -> predicted gain +3.94 % (sd 0.02 over repeats)   RECOMMENDATION: SWAP
+
+ W3  [t4_profile_C.json, secondary]
+ run    T_rec s  T_pred s  preempt g0/g1  mean L  f (g0)  sumR-sumS s  pred gain
+ r0       197.2     189.2     276/286        344   0.070         7.62      4.24%
+ r1       196.6     188.6     276/286        344   0.071         7.62      4.25%
+ r2       198.1     190.1     276/286        344   0.071         7.62      4.22%
+ -> predicted gain +4.24 % (sd 0.02 over repeats)   RECOMMENDATION: SWAP
+
+ W4  [t4_profile_B.json, PRIMARY]
+ run    T_rec s  T_pred s  preempt g0/g1  mean L  f (g0)  sumR-sumS s  pred gain
+ r0        30.8      30.8       0/0            0   0.000         0.00      0.00%
+ r1        30.6      30.6       0/0            0   0.000         0.00      0.00%
+ r2        30.9      30.9       0/0            0   0.000         0.00      0.00%
+ r3        30.6      30.6       0/0            0   0.000         0.00      0.00%
+ r4        30.9      30.9       0/0            0   0.000         0.00      0.00%
+ -> predicted gain +0.00 % (sd 0.00 over repeats)   RECOMMENDATION: RECOMPUTE
+
+ W4  [t4_profile_C.json, secondary]
+ run    T_rec s  T_pred s  preempt g0/g1  mean L  f (g0)  sumR-sumS s  pred gain
+ r0        30.8      30.8       0/0            0   0.000         0.00      0.00%
+ r1        30.6      30.6       0/0            0   0.000         0.00      0.00%
+ r2        30.9      30.9       0/0            0   0.000         0.00      0.00%
+ r3        30.6      30.6       0/0            0   0.000         0.00      0.00%
+ r4        30.9      30.9       0/0            0   0.000         0.00      0.00%
+ -> predicted gain +0.00 % (sd 0.00 over repeats)   RECOMMENDATION: RECOMPUTE
+
+============================================================================================
+ wrote /kaggle/working/kvexp/predictions_W3W4.json
+ sha256 c4884d4bbe589c5e6ffaea217b7412854cbc7949c3d5b4ee1047947ee7ce9711
+ NEXT: commit + push this file (and this printout) BEFORE running any swap arm.
+============================================================================================
