@@ -101,4 +101,4 @@ Each workload reports **mean ± sample SD over repeats**, plus the range.
 | Pre-registration + scripts | `f5783be` (f5783be4d4b92abb59690b766d22feba45e2bdd8) | 2026-10-25 17:47 IST |
 | Harness check result | OK (gpu0 -1.2%, gpu1 +1.6%, eager=True) | 2026-10-25 18:17 IST |
 | predictions_W3W4.json | `b8ff65b` (b8ff65b6f3c14d9b1dbce1da0bf002f23cf5faea) | 2026-10-25 19:14 IST |
-| Swap arms + score | | |
+| Swap arms + score | `0800446` (08004463428d052be1bb346ae65dfcb62e3089d4) | 2026-10-25 19:35 IST |
